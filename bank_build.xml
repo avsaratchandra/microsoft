@@ -1,0 +1,14 @@
+<project name ="HDFC banking" default="saving">
+
+<echo message ="welcome to HDFC banking "/>
+<target name ="saving" depends="loans">
+<echo message ="welcome to saving"/>
+</target>
+<target name="loans" depends="credit cards">
+<echo message ="welcome to loans"/>
+</target>
+<target name="credit cards">
+<echo message ="credit cards available in zero interest"/>
+</target>
+<echo message ="welcome to banking end"/>
+</project>
